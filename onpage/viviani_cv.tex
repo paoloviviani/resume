@@ -28,6 +28,11 @@
 \end{itemize}
 }
 
+\newcommand{\cvaccentpar}[1]{%
+  \smallskip%
+  \textbf{\color{accent}#1}\par
+  \medskip
+}
 
 %% AltaCV uses the fontawesome and academicon fonts
 %% and packages.
@@ -41,6 +46,7 @@
 
 % Change the page layout if you need to
 \geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+\usepackage{multicol}
 
 % Change the font if you want to.
 
@@ -108,10 +114,10 @@
   \phone{+39 329 1865014}
   %\mailaddress{Via Arquata 7, 10134 Torino}
   \location{Torino, ITALY} 
-  \homepage{\url{paoloviviani.github.io}}
+  %\homepage{\url{paoloviviani.github.io}}
   %\twitter{@twitterhandle}
   %\linkedin{linkedin.com/in/yourid}
-  %\github{github.com/yourid}
+  \github{paoloviviani.github.io}
   %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
 %   \orcid{orcid.org/0000-0000-0000-0000}
 }
@@ -136,8 +142,12 @@ Scholarship winner: "Piano Lauree Scientifiche 2008", granted by Società Italia
 \cvevent{Ph.D. in Computer Science}{University of Torino, Computer Science Dept.}{2015 -- 2019}{Torino, IT}{Thesis:
 \textit{Deep Learning at Scale with Nearest Neighbours Communications}.\\Supervisor: Marco Aldinucci. Funded by Noesis Solutions.}
 \smallskip
+
+\cvaccentpar{Academic activity}
 \begin{itemize}
-\item Co-supervisor of one M.Sc. Thesis
+  \item 11 publications on peer-reviewed computer science conferences
+  \item Program committee member in several conferences
+  \item Co-supervisor of one M.Sc. Thesis
 \end{itemize}
 
 \cvsection{\printinfo{\faIndustry}{Experience}}
@@ -145,42 +155,69 @@ Scholarship winner: "Piano Lauree Scientifiche 2008", granted by Società Italia
 \cvevent{Noesis Solutions}{Reasearch Engineer}{April 2015 -- Permanent}{Novara, IT}
 \begin{itemize}
 \item Development of machine learning modelling methodologies for engineering.
-\item Re-definition of the internal development and deployment stack (C++, Python) for scientific computations, with focus on performance and maintainability.
+\item Development of high-performance numerical code.
 \item Cloud and container technologies exploitation.
 \item Supervision of one internship.
 \item Re-designed internal source code management workflow.
-\item Technical contact for the following research projects. Including presentation to European Commission reviewers.
 \end{itemize}
 
-\cvsubsection{Funded Research Projects}
 
-\cveventlinkshort{MACH -- ITEA2 project}{April 2015 -- December 2016}{\href{https://itea3.org/project/mach.html}{itea3.org/project/mach.html}}
-%MAssive Calculations on Hybrid systems. The goal of the project is to develop a DSeL and a computation framework that allows to access hybrid hardware acceleration without specific expertise.
-
-
+\cvaccentpar{Funded research projects}
+Technical contact for the following research projects. Including presentation to European Commission reviewers.
 \smallskip
+\begin{itemize}
+  \item MACH -- ITEA2 project
+\item Fortissimo 2 -- H2020-FoF project
+\item CloudFlow -- FP7-I4MS project
+\item Blockchain for online Service Security -- IMEC-ICON Flemish project
+\item VaProFam -- FlandersMake-ICON Flemish project
+\item DC-CDS -- FlandersMake-ICON Flemish project
+\end{itemize}
 
-\cveventlinkshort{Fortissimo 2 -- H2020-FoF project}{February 2016 -- October 2018}{\href{https://www.fortissimo-project.eu/}{www.fortissimo-project.eu}}
-%FF2 is a collaborative project that will enable European SMEs to be more competitive globally through the use of simulation services running on a High Performance Computing cloud infrastructure.
+%\begin{adjustwidth}{}{-8cm}
+%\cvsection{\printinfo{\faPlane}{Free time}}
+%\begin{multicols}{3}
+%
+%Avid traveller and photographer.\\
+%Former track \& field athlete, now turned to playground basketball.\\
+%\smallskip
+%\faCamera \hspace{0.4pc} \url{paoloph.myportfolio.com}
+%
+%
+%{\color{gray} \small I authorize the use of my personal data in accordance with Italian Privacy Protection Law (30/06/2003, n.196/03)}
+%\end{multicols}
+%  \end{adjustwidth}
 
-\smallskip
+\begin{adjustwidth}{}{-8cm}
+\cvsection{\printinfo{\faBriefcase}{Skills}}
+\begin{multicols}{4}
+\begin{small}
+\cvskillsmall{Parallel Computing}{5}
+\cvskillsmall{GPU Computing}{3}
+\cvskillsmall{Cloud technologies}{4}
+\cvskillsmall{Machine Learning}{4}
+\cvskillsmall{Networking}{4}
 
-\cveventlinkshort{CloudFlow -- FP7-I4MS project}{March 2016 -- May 2017}{\href{http://www.eu-cloudflow.eu/}{www.eu-cloudflow.eu}}
-%Cloudflow will enable the remote use of computational services distributed on the cloud, seamlessly integrating these within established engineering design workflows and standards.
+\cvskillsmall{C++}{5}
+\cvskillsmall{Python}{4}
+\cvskillsmall{MPI/OpenMP}{4}
+\cvskillsmall{CUDA}{2}
+\cvskillsmall{Git}{4}
 
-\smallskip
+\cvskillsmall{MxNet}{5}
+\cvskillsmall{Keras}{3}
+\cvskillsmall{Apache Spark}{1}
+\cvskillsmall{Numerical Libraries}{4}
+\cvskillsmall{Openstack}{3}
+\cvskillsmall{Docker}{4}
 
-\cveventlinkshort{Blockchain for online Service Security -- IMEC-ICON Flemish project}{March 2018 -- November 2019}{}
-
-\smallskip
-
-\cveventlinkshort{VaProFam -- FlandersMake-ICON Flemish project}{February 2019 -- ongoing}{}
-
-\smallskip
-
-\cveventlinkshort{DC-CDS -- FlandersMake-ICON Flemish project}{April 2019 -- ongoing}{}
-
-\cvsubsection{Publications}
+\cvskillsmall{Presentations}{4}
+\cvskillsmall{Communication}{5}
+\cvskillsmall{Time management}{2}
+\cvskillsmall{Workarounds}{5}
+\end{small}
+\end{multicols}
+  \end{adjustwidth}
 
 
 \end{document}
