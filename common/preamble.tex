@@ -28,23 +28,27 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[default]{lato}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 
 %colored boxes
 \usepackage[absolute,noshowtext]{textpos}
+
+\usepackage{multicol}
+\setlength{\multicolsep}{6.0pt plus 2.0pt minus 1.5pt}% 50% of original values
 
 % If using xelatex or lualatex:
 % \setmainfont{Lato}
 
 % Change the colours if you want to
 \definecolor{Mulberry}{HTML}{72243D}
-\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{SlateGrey}{HTML}{2D2D2D}
 \definecolor{LightGrey}{HTML}{666666}
 \definecolor{SteelBlue}{HTML}{4682B4}
 \definecolor{DarkSteelBlue}{HTML}{24435c}
 \definecolor{RifleGreen}{HTML}{414833}
 \definecolor{IndiaGreen}{HTML}{138808}
-\definecolor{VeryLightGrey}{HTML}{dddddd}
+\definecolor{offwhite}{HTML}{FFFAFA}
+\definecolor{VeryLightGrey}{HTML}{eaeaea}
 
 % Green theme
 %\colorlet{heading}{RifleGreen}
@@ -57,11 +61,13 @@
 % Blue theme
 \colorlet{heading}{DarkSteelBlue}
 \colorlet{accent}{SteelBlue}
-\colorlet{ACCENT}{DarkSteelBlue}
+\colorlet{ACCENT}{SteelBlue}
 
 % common colors
 \colorlet{emphasis}{SlateGrey}
 \colorlet{body}{LightGrey}
+%\colorlet{negativeemph}{offwhite}
+\colorlet{negativeemph}{SlateGrey}
 
 % Change the bullets for itemize and rating marker
 % for \cvskill if you want to
@@ -69,10 +75,10 @@
 \renewcommand{\ratingmarker}{\faCircle}
 
 % SQUARE PHOTO ***
-\makeatletter
-\patchcmd{\makecvheader}
-{\tikz\path[fill overzoom image={\@photo}]circle[radius=0.5\linewidth];}  % original definition
-{\includegraphics[width=\linewidth]{\@photo}}   % replace it with this instead
-{}{}
-\makeatother
+%\makeatletter
+%\patchcmd{\makecvheader}
+%{\tikz\path[fill overzoom image={\@photo}]circle[radius=0.5\linewidth];}  % original definition
+%{\includegraphics[width=\linewidth]{\@photo}}   % replace it with this instead
+%{}{}
+%\makeatother
 % ***

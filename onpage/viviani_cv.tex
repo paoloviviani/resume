@@ -23,7 +23,6 @@
 \documentclass[10pt,a4paper]{altacv}
 
 \input{../common/preamble.tex}
-\usepackage{multicol}
 
 \begin{document}
 
@@ -33,15 +32,23 @@
 \begin{adjustwidth}{}{-8cm}
 \makecvheader
 \end{adjustwidth}
-\vspace{0.3cm}
 
 %add color block
-\begin{textblock}{10}(9.5,1.95)
+\vspace{0.5cm}
+\begin{textblock}{10}(9.5,2.1)
   \centering
   \textblockcolour{VeryLightGrey}
 	aaa
   \vspace{250mm}
 \end{textblock}
+%add color block for header
+%\begin{textblock}{200}(0,0)
+%  \centering
+%  \textblockcolour{SlateGrey}
+%	aaa
+%  \vspace{40mm}
+%\end{textblock}
+%\vspace{0.7cm}
 
 %% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
 %% You can always just use \marginpar{...} if you do
@@ -92,11 +99,8 @@ Technical contact for the following research projects. Including presentation to
 \item DC-CDS -- FlandersMake-ICON Flemish project
 \end{itemize}
 
-\cvsection{\printinfo{\faPlane}{Free time}}
-Avid traveller and photographer.\\
-Former track \& field athlete, now turned to playground basketball.\\
-\medskip
-\faCamera \hspace{0.4pc} \url{paoloph.myportfolio.com}
+\divider 
 
+{\color{gray} \small I authorize the use of my personal data in accordance with Italian Privacy Protection Law (30/06/2003, n.196/03)}
 
 \end{document}
