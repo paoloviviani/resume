@@ -1,0 +1,78 @@
+\newcommand{\mycvachievement}[2]{%
+\begin{itemize}[align=left,labelsep=5mm,itemsep=4mm,itemindent=-5mm,noitemsep,topsep=0pt]
+\item[{\Large\color{accent}#1}] \parbox[c]{\linewidth}{\bfseries\textcolor{emphasis}{#2}}
+\end{itemize}
+}
+
+\newcommand{\cvaccentpar}[1]{%
+  \smallskip%
+  \textbf{\color{accent}#1}\par
+  \medskip
+}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%%
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font
+%% folder.
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage{hyperref}
+
+%colored boxes
+\usepackage[absolute,noshowtext]{textpos}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{Mulberry}{HTML}{72243D}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{SteelBlue}{HTML}{4682B4}
+\definecolor{DarkSteelBlue}{HTML}{24435c}
+\definecolor{RifleGreen}{HTML}{414833}
+\definecolor{IndiaGreen}{HTML}{138808}
+\definecolor{VeryLightGrey}{HTML}{dddddd}
+
+% Green theme
+%\colorlet{heading}{RifleGreen}
+%\colorlet{accent}{IndiaGreen}
+
+% Red wine theme
+%\colorlet{heading}{Sepia}
+%\colorlet{accent}{Mulberry}
+
+% Blue theme
+\colorlet{heading}{DarkSteelBlue}
+\colorlet{accent}{SteelBlue}
+\colorlet{ACCENT}{DarkSteelBlue}
+
+% common colors
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+% SQUARE PHOTO ***
+\makeatletter
+\patchcmd{\makecvheader}
+{\tikz\path[fill overzoom image={\@photo}]circle[radius=0.5\linewidth];}  % original definition
+{\includegraphics[width=\linewidth]{\@photo}}   % replace it with this instead
+{}{}
+\makeatother
+% ***
