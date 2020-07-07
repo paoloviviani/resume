@@ -248,14 +248,14 @@
 
 \newenvironment{cvcolumn}[1]{\begin{minipage}[t]{#1}\raggedright}{\end{minipage}}
 
-\RequirePackage[eprint=false,maxbibnames=5,bibencoding=utf8,backend=biber,style=authortitle,sorting=ydnt,doi=false,isbn=false,url=false]{biblatex}
+\RequirePackage[eprint=false,maxbibnames=5,bibencoding=utf8,backend=biber,style=nature,sorting=ydnt,doi=false,isbn=false,url=false]{biblatex}
 %% For removing numbering entirely when using a numeric style
 % \setlength{\bibhang}{1em}
 % \DeclareFieldFormat{labelnumberwidth}{\makebox[\bibhang][l]{\itemmarker}}
 % \setlength{\biblabelsep}{0pt}
 \defbibheading{pubtype}{\cvsubsection{#1}}
 \renewcommand{\bibsetup}{\vspace*{-\baselineskip}}
-\AtEveryBibitem{\makebox[\bibhang][l]{\itemmarker}}
+% \AtEveryBibitem{\makebox[\bibhang][l]{\itemmarker}}
 \setlength{\bibitemsep}{0.25\baselineskip}
 
 % v1.1.2: make it easier to add a sidebar aligned with top of next page
