@@ -248,7 +248,7 @@
 
 \newenvironment{cvcolumn}[1]{\begin{minipage}[t]{#1}\raggedright}{\end{minipage}}
 
-\RequirePackage[eprint=false,maxbibnames=5,bibencoding=utf8,backend=biber,style=nature,sorting=ydnt,doi=false,isbn=false,url=false]{biblatex}
+\RequirePackage[eprint=false,maxbibnames=5,intitle=true,bibencoding=utf8,backend=biber,style=nature,sorting=ydnt,doi=false,isbn=false,url=false]{biblatex}
 %% For removing numbering entirely when using a numeric style
 % \setlength{\bibhang}{1em}
 % \DeclareFieldFormat{labelnumberwidth}{\makebox[\bibhang][l]{\itemmarker}}
