@@ -11,9 +11,27 @@
   \medskip
 }
 
+\newcommand{\cveventlinkshort}[4]{%
+  \textbf{\color{accent}#1}\par
+  \smallskip
+  {\small\makebox[0.5\linewidth][l]{\faCalendar \hspace{0.5em}#2}%
+  \ifstrequal{#3}{}{}{\makebox[0.5\linewidth][l]{\faChain\hspace{0.5em}#3}}\par}
+  \medskip
+}
+
 \newcommand{\cvaccentpar}[1]{%
   \smallskip%
   \textbf{\color{accent}#1}\par
+  \medskip
+}
+
+\newcommand{\cvproject}[4]{%
+  \smallskip%
+  \parbox[t]{0.45\linewidth}{\textbf{\color{accent}#1}}%
+  {\small\makebox[0.45\linewidth][l]{\faUniversity \hspace{0.5em}#2}\par}%
+  \smallskip
+  {\ifstrequal{#3}{}{}{\small\makebox[0.45\linewidth][l]{\faCalendar \hspace{0.5em}#3}}%
+  \ifstrequal{#4}{}{}{\small\makebox[0.45\linewidth][l]{\faChain\hspace{0.5em}#4}}\par}
   \medskip
 }
 
