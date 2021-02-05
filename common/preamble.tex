@@ -33,6 +33,22 @@
   \medskip
 }
 
+\newcommand{\cveventlogo}[5]{%
+\begin{minipage}{0.6\textwidth}
+  {\large\color{emphasis}#2\par}
+  \smallskip
+  \textbf{\color{accent}#3}\par
+  \medskip
+\end{minipage} \hfill
+\begin{minipage}{0.2\textwidth}
+  \includegraphics[height=1cm,width=2cm,keepaspectratio]{#1}
+  \medskip
+\end{minipage}  
+{\small\makebox[0.4\linewidth][l]{\faCalendar \hspace{0.5em}#4}%
+\ifstrequal{#5}{}{}{\makebox[0.5\linewidth][l]{\faMapMarker\hspace{0.5em}#4}}\par}
+\medskip
+}
+
 %% AltaCV uses the fontawesome and academicon fonts
 %% and packages.
 %% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
