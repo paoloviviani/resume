@@ -59,6 +59,7 @@
 \RequirePackage{dashrule}
 \RequirePackage{multirow,tabularx}
 \RequirePackage{changepage}
+\RequirePackage{ragged2e}
 % \RequirePackage{marginfix}
 
 \setlength{\parindent}{0pt}
