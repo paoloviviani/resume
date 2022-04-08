@@ -125,6 +125,12 @@
   {\color{heading}\rule{\linewidth}{2pt}\par}\medskip
 }
 
+\newcommand{\cvtopsubsection}[2][]{%
+  \bigskip%
+  \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}}}%
+  {\color{emphasis}\large\bfseries{#2}\par}\medskip
+}
+
 \newcommand{\cvsubsection}[1]{%
   \smallskip%
   {\color{emphasis}\large\bfseries{#1}\par}\medskip
@@ -165,13 +171,13 @@
 \newcommand{\cvskill}[2]{%
 \textcolor{emphasis}{\textbf{#1}}\hfill
 \foreach \x in {1,...,5}{%
-  \space{\ifnumgreater{\x}{#2}{\color{body!30}}{\color{accent}}\faCircle}}\par%
+  \space{\ifnumgreater{\x}{#2}{\color{body!30}}{\color{accent}}\faSquare}}\par%
 }
 
 \newcommand{\cvskillsmall}[2]{%
 \textcolor{emphasis}{#1}\hfill
 \foreach \x in {1,...,5}{%
-  \space{\ifnumgreater{\x}{#2}{\color{body!30}}{\color{accent}}\faCircle}}\par%
+  \space{\ifnumgreater{\x}{#2}{\color{body!30}}{\color{accent}}\faSquare}}\par%
 }
 
 % Adapted from @Jake's answer at http://tex.stackexchange.com/a/82729/226
