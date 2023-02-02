@@ -1,3 +1,15 @@
+@article{vercellino_fgcs_23,
+title = {A machine learning approach for an HPC use case: The jobs queuing time prediction},
+journal = {Future Generation Computer Systems},
+year = {2023},
+issn = {0167-739X},
+doi = {https://doi.org/10.1016/j.future.2023.01.020},
+url = {https://www.sciencedirect.com/science/article/pii/S0167739X23000274},
+author = {Chiara Vercellino and Alberto Scionti and Giuseppe Varavallo and Paolo Viviani and Giacomo Vitali and Olivier Terzo},
+keywords = {High performance computing, Queues, Batch scheduler, Automatism, Machine learning, Uncertainty quantification},
+abstract = {High-Performance Computing (HPC) domain provided the necessary tools to support the scientific and industrial advancements we all have seen during the last decades. HPC is a broad domain targeting to provide both software and hardware solutions as well as envisioning methodologies that allow achieving goals of interest, such as system performance and energy efficiency. In this context, supercomputers have been the vehicle for developing and testing the most advanced technologies since their first appearance. Unlike cloud computing resources that are provided to the end-users in an on-demand fashion in the form of virtualized resources (i.e., virtual machines and containers), supercomputers’ resources are generally served through State-of-the-Art batch schedulers (e.g., SLURM, PBS, LSF, HTCondor). As such, the users submit their computational jobs to the system, which manages their execution with the support of queues. In this regard, predicting the behaviour of the jobs in the batch scheduler queues becomes worth it. Indeed, there are many cases where a deeper knowledge of the time experienced by a job in a queue (e.g., the submission of check-pointed jobs or the submission of jobs with execution dependencies) allows exploring more effective workflow orchestration policies. In this work, we focused on applying machine learning (ML) techniques to learn from the historical data collected from the queuing system of real supercomputers, aiming at predicting the time spent on a queue by a given job. Specifically, we applied both unsupervised learning (UL) and supervised learning (SL) techniques to define the most effective features for the prediction task and the actual prediction of the queue waiting time. For this purpose, two approaches have been explored: on one side, the prediction of ranges on jobs’ queuing times (classification approach) and, on the other side, the prediction of the waiting time at the minutes level (regression approach). Experimental results highlight the strong relationship between the SL models’ performances and the way the dataset is split. At the end of the prediction step, we present the uncertainty quantification approach, i.e., a tool to associate the predictions with reliability metrics, based on variance estimation.}
+}
+
 @article{savioAcceleratingLegacyApplications2022,
   title = {Accelerating Legacy Applications with Spatial Computing Devices},
   author = {Savio, Paolo and Scionti, Alberto and Vitali, Giacomo and Viviani, Paolo and Vercellino, Chiara and Terzo, Olivier and Nguyen, Huy-Nam and Magarielli, Donato and Spano, Ennio and Marconcini, Michele and Poli, Francesco},
@@ -147,17 +159,6 @@
 	Url = {https://iris.unito.it/retrieve/handle/2318/1659340/387685/preprint_aperto.pdf},
 	Year = {2018}}
 	
-@inproceedings{18:parco:workflow,
-	Author = {Fabio Tordini and Marco Aldinucci and Paolo Viviani and Ivan Merelli and Pietro Li{\`{o}}},
-	Booktitle = {Proc. of the Intl. Conference on Parallel Computing, ParCo 2017, 12-15 September 2017, Bologna, Italy},
-	Date-Added = {2018-01-21 15:15:01 +0000},
-	Date-Modified = {2018-01-21 15:33:23 +0000},
-	Publisher = {{IOS} Press},
-	Series = {Advances in Parallel Computing},
-	Title = {Scientific Workflows on Clouds with Heterogeneous and Preemptible Instances},
-	Url = {https://iris.unito.it/retrieve/handle/2318/1658510/385411/main.pdf},
-	Year = {2018}}
-
 @inproceedings{17:sac:armadillo,
 	Address = {Marrakesh, Morocco},
 	Author = {Paolo Viviani and Massimo Torquati and Marco Aldinucci and Roberto d'Ippolito},
